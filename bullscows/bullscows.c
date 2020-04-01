@@ -9,15 +9,26 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
 
-#define TEST false    // If true run tests (only) else run program
+#define TEST true    // If true run tests (only) else run program
 #define DEBUG true    // If true, print answer
 
 // ----------- Declare functions used in main ----------
 
+// Get the number of digits in a number
+int n_digits(int number);
+
+// Check if a digit is in a number
+bool digit_is_in(int number, int digit);
+
+int get_digit_at_index(int number, int index);
+
 // Generates a 4-digit random number with no repeated digits
 // (digits in range 1-9)
 int get_random_4digit();
+
+bool unique_4digits(int number);
 
 // Returns number of bulls in guessed number
 int count_bulls(int guess, int answer);
@@ -77,12 +88,79 @@ int main(void) {
 }
 
 // ------- Functions definitions --------------------------------
-// If not using declarations, must be defined correct order
 
-// TODO All the function definitions here
+int n_digits(int number) {
+    int count = 0;
+    while (number > 0) {
+        count++;
+        number /= 10;
+    }
+    return count;
+}
 
+bool digit_is_in(int number, int digit) {
+    while (number > 0) {
+        if (number % 10 == digit) {
+            return true;
+        }
+        number /= 10;
+    }
+    return false;
+}
 
-// This one's for free..
+int get_digit_at_index(int number, int index) {
+    int currentIndex = n_digits(number);
+    int digit = 0;
+    while (number > 0) {
+        if (index == --currentIndex) {
+            digit = number % 10;
+        }
+        number /= 10;
+    }
+    return digit;
+}
+
+bool unique_4digits(int number) {
+    int digit = 0;
+    while (number > 0) {
+        if (digit_is_in(number / 10, number % 10)) {
+            return false;
+        }
+        number /= 10;
+    }
+    return true;
+}
+
+int get_random_4digit() {
+    int number = 0;
+    // For loop would be better
+    int i = 0;
+    while (i < 4) {
+        //Generate one digit at a time to avoid any zeroes
+        number += (rand() % 9 + 1) * (int) pow(10, i++);
+    }
+    return number;
+}
+
+int count_bulls(int guess, int answer) {
+    int bulls = 0;
+    while (guess > 0) {
+        if (guess % 10 == answer % 10) bulls++;
+        guess /= 10;
+        answer /= 10;
+    }
+    return bulls;
+}
+
+int count_cows_and_bulls(int guess, int answer){
+    int cowsAndBulls = 0;
+    while (guess > 0) {
+        if (digit_is_in(answer, guess % 10)) cowsAndBulls++;
+        guess /= 10;
+    }
+    return cowsAndBulls;
+}
+
 int get_player_guess() {
     int guess;
     printf("Guess > ");
@@ -96,8 +174,6 @@ int get_player_guess() {
 
 void test() {
 
-    // TODO Uncomment on at the time and test
-    /*
     EQUALS(n_digits(123), 3);
     EQUALS(n_digits(12345), 5);
     EQUALS(n_digits(1023945), 7);
@@ -122,8 +198,6 @@ void test() {
 
     EQUALS(count_cows_and_bulls(1827, 7813), 3);
     EQUALS(count_cows_and_bulls(2647, 2837), 2);
-     */
-
 
     exit(0);  // End program
 }
