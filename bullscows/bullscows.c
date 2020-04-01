@@ -11,8 +11,8 @@
 #include <time.h>
 #include <math.h>
 
-#define TEST true    // If true run tests (only) else run program
-#define DEBUG true    // If true, print answer
+#define TEST false    // If true run tests (only) else run program
+#define DEBUG false    // If true, print answer
 
 // ----------- Declare functions used in main ----------
 
@@ -74,8 +74,24 @@ int main(void) {
 
     // ----- The game loop ------
 
-    // TODO Use functions (and more) to implement the game
-    // TODO Try to sketch one round, then surround with a loop.
+    while (!aborted) {
+        guess = get_player_guess();
+        n_guess++;
+        if (n_digits(guess) == 4) {
+            if (guess == answer) {
+                break;
+            } else {
+                bulls = count_bulls(guess, answer);
+                cows = count_cows_and_bulls(guess, answer) - bulls;
+                printf("There are %d bulls and %d cows", bulls, cows);
+            }
+        } else if(guess == -1){
+            aborted = true;
+        } else{
+            printf("Bad guess");
+        }
+
+    }
 
     // --- End game loop --------
 
@@ -121,7 +137,6 @@ int get_digit_at_index(int number, int index) {
 }
 
 bool unique_4digits(int number) {
-    int digit = 0;
     while (number > 0) {
         if (digit_is_in(number / 10, number % 10)) {
             return false;
@@ -152,7 +167,7 @@ int count_bulls(int guess, int answer) {
     return bulls;
 }
 
-int count_cows_and_bulls(int guess, int answer){
+int count_cows_and_bulls(int guess, int answer) {
     int cowsAndBulls = 0;
     while (guess > 0) {
         if (digit_is_in(answer, guess % 10)) cowsAndBulls++;
