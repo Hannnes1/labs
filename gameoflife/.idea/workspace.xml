@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
-    <generated />
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="gameoflife" targetName="gameoflife" />
+      <config projectName="gameoflife" targetName="test" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -10,149 +13,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f66b8d04-4880-4663-bfcc-93221a6d7473" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../dat043/exam/ovntenta1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dat043/exam/ovntenta1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bullscows/ASSIGNMENT1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../bullscows/ASSIGNMENT1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bullscows/bullscows.c" beforeDir="false" afterPath="$PROJECT_DIR$/../bullscows/bullscows.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bullscows/ASSIGNMENT1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../bullscows/ASSIGNMENT1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bullscows/bullscows.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../bullscows/bullscows.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_of_life.c" beforeDir="false" afterPath="$PROJECT_DIR$/game_of_life.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/test.c" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-127426140">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="c" value="3" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="ObjectiveC" value="3" />
-          <entry key="PLAIN_TEXT" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="c" value="49" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="ObjectiveC" value="49" />
-          <entry key="PLAIN_TEXT" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game_of_life.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.c">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ASSIGNMENT2.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/game_of_life.c" />
-        <option value="$PROJECT_DIR$/ASSIGNMENT2.txt" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="300" />
-    <option name="y" value="16" />
-    <option name="width" value="948" />
-    <option name="height" value="960" />
-  </component>
+  <component name="ProjectId" id="1aqoX2dTKKiUMPEXUFUHBLLokxc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="gameoflife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gameoflife" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RunManager" selected="CMake Application.gameoflife">
+    <configuration name="gameoflife" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="gameoflife" TARGET_NAME="gameoflife" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="gameoflife" RUN_TARGET_NAME="gameoflife">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="gameoflife" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="gameoflife" RUN_TARGET_NAME="test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.gameoflife" />
+      <item itemvalue="CMake Application.test" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -165,68 +75,44 @@
       <option name="presentableId" value="Default" />
       <updated>1582874387249</updated>
       <workItem from="1582874388329" duration="349000" />
+      <workItem from="1587472521187" duration="2870000" />
+      <workItem from="1587507102117" duration="2403000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="349000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="300" y="16" width="948" height="960" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="CMake" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$USER_HOME$" />
+      <path value="$PROJECT_DIR$/../../.." />
+    </ignored-roots>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/game_of_life.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASSIGNMENT2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315" />
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state width="1872" height="273" key="GridCell.Tab.0.bottom" timestamp="1587509482817">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="273" key="GridCell.Tab.0.bottom/1920.0.1920.1080/3840.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1587509482817" />
+    <state width="1872" height="273" key="GridCell.Tab.0.center" timestamp="1587509482817">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="273" key="GridCell.Tab.0.center/1920.0.1920.1080/3840.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1587509482817" />
+    <state width="1872" height="273" key="GridCell.Tab.0.left" timestamp="1587509482817">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="273" key="GridCell.Tab.0.left/1920.0.1920.1080/3840.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1587509482817" />
+    <state width="1872" height="273" key="GridCell.Tab.0.right" timestamp="1587509482817">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="273" key="GridCell.Tab.0.right/1920.0.1920.1080/3840.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1587509482817" />
+    <state x="2369" y="155" key="SettingsEditor" timestamp="1587472534842">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2369" y="155" key="SettingsEditor/1920.0.1920.1080/3840.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1587472534842" />
+    <state x="2577" y="261" width="606" height="518" key="find.popup" timestamp="1587508260457">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2577" y="261" width="606" height="518" key="find.popup/1920.0.1920.1080/3840.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1587508260457" />
   </component>
 </project>
