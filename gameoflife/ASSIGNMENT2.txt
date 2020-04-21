@@ -1,0 +1,60 @@
+***  Assignment 2 Game of Life ***
+
+Game of Life is a famous (graphical) simulation.
+See https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life,
+https://sv.wikipedia.org/wiki/Game_of_Life#Regler
+and https://www.youtube.com/watch?v=C2vgICfQawE
+(we'll probably not get it as fancy as the video)
+
+Files
+-----
+The application is divided over a few files
+- main.c, is the graphics, nothing to do for you, it's all implemented.
+- game_of_life.h. File with declarations of functions used by main.c. Nothing to do for you.
+- game_of_life.c. Definitions of the top level functions and helper functions. You implement.
+- test.c. A program for testing only. You can, if needed,  modify or add tests.
+
+Testing
+-------
+Inspect file test.c !!!
+
+To run tests, select test from the drop down list in the menu. Click run.
+All should print true as usual.
+
+NOTE: It's very efficient to debug the tests!
+
+A note on debugging arrays in functions
+---------------------------------------
+To be able to inspect arrays in functions during debug...
+
+1.  Start debugging, enter into function
+2.  Assume parameter to functions is arr[] and size is 10.
+   - In Debugger window, right click > New Watch
+   - Type: (int (*)[10]) arr
+   - Enter, enter
+3.  Click the triangles before the watch to inspect the elements
+4.  To remove watch, right click in window > Remove Watch
+
+
+Recommended workflow
+-----------------------------
+Hints: Exercises from week3 may be reused!
+
+1.  Checkout the file game_of_life.h. Read comments! Compare with definitions of
+   functions in game_of_life.c.
+
+2.  Check out the sketch of the functional decomposition in gameoflife.pdf.
+
+3.  Start with the gofl_get_world branch
+   - Implement one function in turn and test (bottom-up)
+   - Implement gofl_get_world function.
+   - Now it should be possible to see the initial state. Try run gameoflife!
+
+   NOTE: The shuffle method should use the modern version of the Fisher-Yates
+   algorithm. See https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+
+4.  Continue in the same way with the gofl_next_state branch. Check out the rules,
+   see links above
+
+5.  When finished, run it! The world should be alive!
+
