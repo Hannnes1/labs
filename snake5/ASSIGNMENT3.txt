@@ -33,7 +33,7 @@ The application is divided over a few files
 - main.c, is the graphics, nothing to do for you, it's all implemented.
 - snake.h. File with declarations of  functions used by main.c. Nothing to do for you.
 - snake.c. Definitions of the top level functions and helper functions. You implement.
-- test.c. A program for testing only. You can, if needen, modify or add tests.
+- test.c. A program for testing only. You can, if needed, modify or add tests.
 
 Implementation
 --------------

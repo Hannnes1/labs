@@ -55,9 +55,9 @@ int main(void) {
 
     // Test are dependent must implement in this order.
     test_segment_new();
-    //test_snake_new();
-    //test_snake_move();  // Move will call snake_shift.
-    //test_snake_append();
+    test_snake_new();
+    test_snake_move();  // Move will call snake_shift.
+    test_snake_append();
     //test_snake_turn_move();
     //test_snake_hit_self();
 
@@ -108,11 +108,11 @@ void test_snake_append() {
     snake_t *snake = snake_new(100, 100, 10, 10);
 
     snake_append_segment(snake);
+
     EQUALS(check_invariants(snake), true);
     EQUALS(snake->length, 3);
     // Convert snake to string, s = segment
     STR_EQUALS(to_str(snake), "h(100, 100) s(90, 100) t(0, 0)");
-
     snake_move(snake);
     EQUALS(check_invariants(snake), true);
     STR_EQUALS(to_str(snake), "h(110, 100) s(100, 100) t(90, 100)");
