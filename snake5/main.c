@@ -40,7 +40,7 @@ static snake_t *get_snake(int length) {
 }
 
 static void init() {
-    the_snake = get_snake(2);  // Will default have length 2
+    the_snake = get_snake(0);  // Will default have length 2
     the_apple = apple_new();
 }
 

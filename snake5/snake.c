@@ -53,6 +53,7 @@ snake_t *snake_new(int x, int y, int width, int height) {
 
 // Move last seg to head. Set new positions for head
 static void shift(snake_t *the_snake, int new_x_head, int new_y_head) {
+
     //Move last to heads position
     the_snake->last->x = the_snake->head->x;
     the_snake->last->y = the_snake->head->y;
@@ -88,11 +89,10 @@ void snake_move(snake_t *the_snake) {
     } else if (the_snake->dir == LEFT) {
         new_x_head -= the_snake->width;
     } else if (the_snake->dir == UP) {
-        new_y_head += the_snake->height;
-    } else {
         new_y_head -= the_snake->height;
+    } else {
+        new_y_head += the_snake->height;
     }
-
     shift(the_snake, new_x_head, new_y_head);
 }
 
@@ -100,7 +100,7 @@ void snake_move(snake_t *the_snake) {
 // matter. The new segment will get a positions at next
 // move.
 void snake_append_segment(snake_t *the_snake) {
-    seg_t *new_last = segment_new(0, 0, the_snake->last);
+    seg_t *new_last = segment_new(the_snake->last->x, the_snake->last->y, the_snake->last);
     the_snake->last = new_last;
     the_snake->length++;
 }
@@ -114,13 +114,23 @@ void snake_turn(snake_t *the_snake, dir_t dir) {
  *  Else if length > 2 it will collide. Default length is 2.
  */
 bool snake_hit_self(snake_t *the_snake) {
-    // TODO
+    if (the_snake->length > 2) {
+        for (seg_t *pos = the_snake->last; pos->prev != NULL; pos = pos->prev) {
+            if (the_snake->head->x == pos->x && the_snake->head->y == pos->y) {
+                return true;
+            }
+        }
+    }
     return false;
 }
 
 
 bool snake_hit_wall(snake_t *the_snake) {
-    // TODO
+    if (the_snake->head->x >= GAME_MAX_X || the_snake->head->x < 0 ||
+        the_snake->head->y >= GAME_MAX_Y || the_snake->head->y < 0) {
+        return true;
+    }
+    return false;
 }
 
 bool snake_hit_apple(snake_t *the_snake, apple_t *the_apple) {

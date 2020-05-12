@@ -58,8 +58,8 @@ int main(void) {
     test_snake_new();
     test_snake_move();  // Move will call snake_shift.
     test_snake_append();
-    //test_snake_turn_move();
-    //test_snake_hit_self();
+    test_snake_turn_move();
+    test_snake_hit_self();
 
     return 0;
 }
@@ -112,7 +112,7 @@ void test_snake_append() {
     EQUALS(check_invariants(snake), true);
     EQUALS(snake->length, 3);
     // Convert snake to string, s = segment
-    STR_EQUALS(to_str(snake), "h(100, 100) s(90, 100) t(0, 0)");
+    STR_EQUALS(to_str(snake), "h(100, 100) s(90, 100) t(90, 100)");
     snake_move(snake);
     EQUALS(check_invariants(snake), true);
     STR_EQUALS(to_str(snake), "h(110, 100) s(100, 100) t(90, 100)");
@@ -120,7 +120,7 @@ void test_snake_append() {
     snake_append_segment(snake);
     EQUALS(check_invariants(snake), true);
     EQUALS(snake->length, 4);
-    STR_EQUALS(to_str(snake), "h(110, 100) s(100, 100) s(90, 100) t(0, 0)");
+    STR_EQUALS(to_str(snake), "h(110, 100) s(100, 100) s(90, 100) t(90, 100)");
 
     snake_move(snake);
     EQUALS(check_invariants(snake), true);
@@ -156,7 +156,7 @@ void test_snake_hit_self() {
     snake_append_segment(snake);
     EQUALS(snake->length, 3);   // If length > 2 possibly will collide!
     EQUALS(snake->dir, LEFT);
-    snake_turn(snake, RIGHT);    // Opposite direction
+    snake_turn(snake, RIGHT);    // Opposite direct
     snake_move(snake);
     EQUALS(snake_hit_self(snake), true);
 }
