@@ -12,7 +12,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f66b8d04-4880-4663-bfcc-93221a6d7473" name="Default Changelist" comment="" />
+    <list default="true" id="f66b8d04-4880-4663-bfcc-93221a6d7473" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_of_life.c" beforeDir="false" afterPath="$PROJECT_DIR$/game_of_life.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/test.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +37,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -44,12 +50,12 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager" selected="CMake Application.gameoflife">
-    <configuration name="gameoflife" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="gameoflife" TARGET_NAME="gameoflife" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="gameoflife" RUN_TARGET_NAME="gameoflife">
+    <configuration name="gameoflife" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="gameoflife" TARGET_NAME="gameoflife" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="gameoflife" RUN_TARGET_NAME="gameoflife">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="gameoflife" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="gameoflife" RUN_TARGET_NAME="test">
+    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="gameoflife" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="gameoflife" RUN_TARGET_NAME="test">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -72,11 +78,12 @@
       <workItem from="1582874388329" duration="349000" />
       <workItem from="1587472521187" duration="2870000" />
       <workItem from="1587507102117" duration="2448000" />
+      <workItem from="1589523503940" duration="4256000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -85,21 +92,25 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1872" height="273" key="GridCell.Tab.0.bottom" timestamp="1587509550441">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1589526382052">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589526382052" />
     <state width="1872" height="273" key="GridCell.Tab.0.bottom/1920.0.1920.1080/3840.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1587509550441" />
-    <state width="1872" height="273" key="GridCell.Tab.0.center" timestamp="1587509550441">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1589526382052">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589526382052" />
     <state width="1872" height="273" key="GridCell.Tab.0.center/1920.0.1920.1080/3840.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1587509550441" />
-    <state width="1872" height="273" key="GridCell.Tab.0.left" timestamp="1587509550441">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1589526382051">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589526382051" />
     <state width="1872" height="273" key="GridCell.Tab.0.left/1920.0.1920.1080/3840.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1587509550441" />
-    <state width="1872" height="273" key="GridCell.Tab.0.right" timestamp="1587509550441">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1589526382052">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589526382052" />
     <state width="1872" height="273" key="GridCell.Tab.0.right/1920.0.1920.1080/3840.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1587509550441" />
     <state x="2369" y="155" key="SettingsEditor" timestamp="1587472534842">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -109,5 +120,9 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2577" y="261" width="606" height="518" key="find.popup/1920.0.1920.1080/3840.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1587508260457" />
+    <state x="363" y="253" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1589524634130">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="363" y="253" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1280.680@0.0.1280.680" timestamp="1589524634130" />
   </component>
 </project>

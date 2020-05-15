@@ -34,20 +34,13 @@ void test_next_state();
  *     Here the testing starts
  */
 int main(void) {
-    srand((unsigned int) time(NULL));
     // Run one at the time until all works
     // Then possibly run all at once.
-    printf("---------\n");
     test_get_cells();
-    printf("---------\n");
     test_shuffle_cells();
-    printf("---------\n");
     test_array_to_matrix();
-    printf("---------\n");
     test_get_living_neighbours();
-    printf("---------\n");
     test_next_state();
-    printf("---------\n");
     exit(0);
 }
 
@@ -60,7 +53,7 @@ void test_next_state() {
                           {DEAD,  ALIVE, ALIVE}};
     gofl_next_state(3, 3, world);
 
-    // This will give true for some before implemented!
+    // This will give true fore some before implemented!
     EQUALS(world[1][1], DEAD);  // Has 4 neighbours ALIVE -> DEAD
     EQUALS(world[2][2], ALIVE); // Has 2 neighbours ALIVE -> ALIVE
     EQUALS(world[1][2], ALIVE); // Has 3 neighbours DEAD -> ALIVE
@@ -82,7 +75,7 @@ void test_array_to_matrix() {
     cell_t cells1[4];
     get_cells(cells1, 4, 0.5);
     cell_t world1[2][2];
-    array_to_matrix(2, 2, world1, cells1);
+    array_to_matrix(2, 2, world1, cells1, 4);
 
     int expected1[] = {1, 1};
     ARR_EQUALS(world1[0], expected1); // First row
@@ -92,7 +85,7 @@ void test_array_to_matrix() {
     cell_t cells2[9];
     get_cells(cells2, 9, 0.5);
     cell_t world2[3][3];
-    array_to_matrix(3, 3, world2, cells2);
+    array_to_matrix(3, 3, world2, cells2, 9);
     int expected3[] = {1, 1, 0};
     ARR_EQUALS(world2[1], expected3); // Mid row
 }
