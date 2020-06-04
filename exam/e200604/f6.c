@@ -30,11 +30,6 @@ int main(void) {
 
     p2 = do_it(p1, p2); // Call
     // After
-    int q = m[0][0];
-    int z = a[0];
-    int *r = p2;
-    int *w = p1;
-    printf("%d, %d, %d, %d", q, z, r, w);
     return 0;
 }
 
