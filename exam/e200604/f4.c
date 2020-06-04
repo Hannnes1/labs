@@ -5,15 +5,18 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+void partial_sums(int p_sums[], const int arr[], int size);
 
- int main(void){
+int main(void) {
 
+    return 0;
+}
 
-     // Om ett program skriv svaret här
-
-
-     return 0;
- }
-
-
- // Om en funktion skriv svaret här
+void partial_sums(int p_sums[], const int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        p_sums[i] = 0;
+        for (int j = 0; j <= i; j++) {
+            p_sums[i] += arr[j];
+        }
+    }
+}

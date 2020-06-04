@@ -24,24 +24,32 @@ list_t *list_new();
 // Add value last in list
 list_t *list_append(list_t *list, int value);
 
+list_t *sub_list(list_t *list, int from_index, int to_index);
+
 int main(void) {
-
-
-    // Om ett program skriv svaret här
 
     return 0;
 }
 
-
-// Om en funktion skriv svaret här
-
-
-
+list_t *sub_list(list_t *list, int from_index, int to_index) {
+    node_t *node = list->head;
+    int i = 0;
+    while (i++ < from_index) {
+        node = node->next;
+    }
+    list_t *new_list = list_new();
+    while (i++ <= to_index) {
+        list_append(new_list, node->value);
+        node = node->next;
+    }
+    return new_list;
+}
 
 list_t *list_new() {
     list_t *list = malloc(sizeof(list_t));
     list->head = NULL;
     list->len = 0;
+    return list;
 }
 
 list_t *list_append(list_t *list, int value) {
