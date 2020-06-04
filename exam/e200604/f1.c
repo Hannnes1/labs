@@ -7,7 +7,7 @@
 
 int main(void) {
 
-    char *str = "abcdef";   // Comments here ...
+    char *str = "abcdef";   // str är en strängkonstant. Programmet krashar när man försöker ändra den
     printf("%c\n", str[0]);
     str[1] = 'X';
     printf("%s\n", str);
