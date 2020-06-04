@@ -13,16 +13,9 @@
 void expand_string(char *expanded, const char *str);
 
 int main(void) {
-    char str[] = "1(21)2((()3(A)";
-    char expanded[100];
-
-    expand_string(expanded, str);
-
-    printf("%s\n", expanded);
-
-    printf("%d", NUM_VALUE('9'));
 
     return 0;
+
 }
 
 void expand_string(char *expanded, const char *str) {

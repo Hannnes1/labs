@@ -27,6 +27,7 @@ int main(void) {
 }
 
 double line_length(line2D_t *line) {
+    //pow() would have been better here, but it's not allowed
     return sqrt((line->p2.x - line->p1.x) * (line->p2.x - line->p1.x) +
                 (line->p2.y - line->p1.y) * (line->p2.y - line->p1.y));
 }

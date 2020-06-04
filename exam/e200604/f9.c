@@ -34,10 +34,11 @@ int main(void) {
 list_t *sub_list(list_t *list, int from_index, int to_index) {
     node_t *node = list->head;
     int i = 0;
+    //Traverse to first node
     while (i++ < from_index) {
         node = node->next;
     }
-    list_t *new_list = list_new();
+    list_t *new_list = list_new(); //The sublist
     while (i++ <= to_index) {
         list_append(new_list, node->value);
         node = node->next;

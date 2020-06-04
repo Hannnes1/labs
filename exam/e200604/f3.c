@@ -9,7 +9,7 @@
 int generate_rand(int lower, int upper);
 
 int main(void) {
-    int correct = 0;
+    int correct = 0; //Number of correct answers
 
     srand((unsigned int) time(NULL));
 
@@ -20,6 +20,7 @@ int main(void) {
 
         printf("Är %d delbart med %d?", n1, n2);
         scanf("%d", &input);
+
         if (input == -1) {
             break;
         } else if (input == (n1 % n2 == 0)) {
@@ -36,5 +37,6 @@ int main(void) {
 }
 
 int generate_rand(int lower, int upper) {
+    //Random number between lower and upper (inclusive)
     return rand() % (upper - lower + 1) + lower;
 }

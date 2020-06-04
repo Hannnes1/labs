@@ -7,6 +7,7 @@
 
 bool is_increasing(int n_rows, int n_cols, int m[][n_cols]);
 
+//Check if a single array is increasing
 bool array_is_increasing(const int arr[], int size);
 
 int main(void) {
@@ -21,6 +22,7 @@ bool is_increasing(int n_rows, int n_cols, int m[][n_cols]) {
             return false;
         }
     }
+    //Create an array for each column one by one, and check if it increases
     for (int c = 0; c < n_cols; c++) {
         for (int r = 0; r < n_rows; r++) {
             c_arr[r] = m[r][c];

@@ -13,10 +13,10 @@ int main(void) {
 }
 
 void partial_sums(int p_sums[], const int arr[], int size) {
-    for (int i = 0; i < size; i++) {
-        p_sums[i] = 0;
-        for (int j = 0; j <= i; j++) {
-            p_sums[i] += arr[j];
+    for (int p_index = 0; p_index < size; p_index++) {
+        p_sums[p_index] = 0;
+        for (int arr_index = 0; arr_index <= p_index; arr_index++) {
+            p_sums[p_index] += arr[arr_index];
         }
     }
 }
